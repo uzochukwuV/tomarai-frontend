@@ -55,11 +55,11 @@ const PredictionCard: React.FC<PredictionCardProps> = ({ token, className }) => 
             </div>
             <Progress 
               value={formattedConfidence} 
-              className="h-2"
-              indicatorClassName={cn(
-                formattedConfidence >= 70 ? "bg-green-500" : 
-                formattedConfidence >= 40 ? "bg-yellow-500" : 
-                "bg-red-500"
+              
+              className={cn(
+                formattedConfidence >= 70 ? "bg-green-500 h-2" : 
+                formattedConfidence >= 40 ? "bg-yellow-500 h-2" : 
+                "bg-red-500 h-2"
               )}
             />
           </div>

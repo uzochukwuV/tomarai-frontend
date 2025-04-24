@@ -62,6 +62,11 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     connect();
 
     // Clean up
+
+
+
+
+    
     return () => {
       socket.off('connect', handleConnect);
       socket.off('disconnect', handleDisconnect);

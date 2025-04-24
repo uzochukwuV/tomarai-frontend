@@ -16,6 +16,8 @@ class RealSocket {
       timeout: 10000  // Longer timeout
     });
 
+
+    
     // Built-in connect/disconnect handling
     this.socket.on("connect", () => {
       this.connected = true;
